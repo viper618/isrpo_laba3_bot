@@ -16,3 +16,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from jokes import get_joke
+from quotes import get_quote
+
+if command == "joke":
+    print("\n" + get_joke() + "\n")
+elif command == "quote":
+    print("\nЦитата дня:\n" + get_quote() + "\n")
+
